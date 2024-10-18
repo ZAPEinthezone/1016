@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border: 5px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+  text-align: left;
+  padding: 16px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <table cellpaddinf="10" cellspacing="5" width="" >
+      <tr>
+        <th bgcolor="#C0C0C0">TIME</th>
+        <th bgcolor="#C0C0C0">Mon</th>
+        <th bgcolor="#C0C0C0">Tue</th>
+        <th bgcolor="#C0C0C0">Wed</th>
+      </tr>
+      <tr>
+        <td>7:30am</td>
+        <td>breakfast</td>
+        <td>breakfast</td>
+        <td>breakfast</td>
+      </tr>
+      <tr>
+        <td>8:00am</td>
+        <td rowspan="2" bgcolor="#00FF00">Business</td>
+        <td rowspan="3" bgcolor="008080">physics</td>
+        <td rowspan="2" bgcolor="#00FF00">Business</td>
+      </tr>
+      <tr>
+        <td>8:30am</td>
+        
+        
+      </tr>
+      <tr>
+        <td>9:00am</td>
+        <td rowspan="2" bgcolor="#FF00FF">Applied Math</td>
+        <td rowspan="2" bgcolor="#FF00FF">Applied Math</td>
+      </tr>
+    <tr>
+        <td>9:30am</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>10:00am</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>10:30am</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11:00am</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11:30am</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+  </div>
+
+</body>
+</html>
 
