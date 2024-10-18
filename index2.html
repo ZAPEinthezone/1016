@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color:darkcyan;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table id="multiplicationTable"></table>
+
+<script>
+    function createTable() {
+        let table = document.getElementById("multiplicationTable");
+        for (let i = 1; i <= 9; i++) {
+            let row = document.createElement("tr");
+            for (let j = 2; j <= 9; j++) {
+                let cell = document.createElement("td");
+                cell.innerHTML = `${j} * ${i} = ${j * i}`;
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        }
+    }
+    createTable();
+</script>
+
+</body>
+</html>
